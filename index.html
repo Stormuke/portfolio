@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/home-web-page_icon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Portfolio Alex Kazakov</title>
+</head>
+
+<body>
+    <div class="page">
+      <header class="header">
+        <nav class="header__navigation">
+          <a href="#home" class="header__navigation-text">Home</a>
+          <a href="#about_me" class="header__navigation-text">About me</a>
+          <a href="#skills" class="header__navigation-text">Skills</a>
+          <a href="#contacts" class="header__navigation-text">Contacts</a>
+        </nav>
+        <div class="header__main-information" id="home">
+          <h1 class="header__title">Alexey Kazakov</h1>
+          <p class="subtitle subtitle_size_m">Front-end Developer 28 years old, Moscow</p>
+        </div>
+        <img src="https://avatars.mds.yandex.net/get-zen_doc/119454/pub_5ac2ee0c1aa80cc4ef48ed50_5ac2f0ba9d5cb350233b990b/scale_1200"
+        alt="fat cat" class="header__main-illustration">
+      </header>
+
+      <section class="description">
+        <h2 class="title" id="about_me">About me</h2>
+        <p class="description__text">Hi, I'm Alexey – Front-end developer from Moscow. I'm interested in develop and everything connected with it.</p>
+        <p class="description__text">I'm studying at courses "Web developer" in Yandex.Praktikum.</p>
+        <p class="description__text">Ready to implement excellent projects with wonderful people.</p>
+      </section>
+
+      <section class="skills">
+        <h2 class="title" id="skills">Skills</h2>
+        <p class="subtitle">I use in my work</p>
+        <div class="skills__description">
+          <div class="skills__description-cell">
+          <a href="https://ru.wikipedia.org/wiki/HTML5" target="_blank"><img src="./images/file_type_html_icon_130541.png" alt="HTML5" class="skills__description-illustration"></a>
+          <p class="skills__description-text">HTML 5</p>
+          </div>
+          <div class="skills__description-cell">
+          <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"><img src="./images/file_type_css_icon_130661.png" alt="CSS" class="skills__description-illustration"></a>
+          <p class="skills__description-text">CSS</p>
+          </div>
+          <div class="skills__description-cell">
+          <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank"><img src="./images/javascript_icon_130900.png" alt="JavaScript" class="skills__description-illustration"></a>
+          <p class="skills__description-text">JavaScript</p>
+          </div>
+          <div class="skills__description-cell">
+          <a href="https://ru.wikipedia.org/wiki/Figma" target="_blank"><img src="./images/Figma.png" alt="Figma" class="skills__description-illustration"></a>
+            <p class="skills__description-text">Figma</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h2 class="title" id="contacts">Contacts</h2>
+        <p class="subtitle">Want to know more or just chat?
+          You are welcome!</p>
+        <button class="footer__button">Send message</button>
+        <div class="form__area form__area_hide">
+          <form class="form">
+            <h2 class="subtile">Form for your feedback</h2>
+            <img src="./images/cross-black-circular-button_icon-icons.com_73054.png" alt="close" class="form__close">
+            <label for="name" class="form__label">Enter your name:
+            <input type="text" name="name" id="name" placeholder="Your name" class="form__item form__item-el-text">
+            </label>
+            <label for="message" class="form__label">Enter your message:
+            <textarea name="message" id="message" cols="28" rows="10" placeholder="Enter your message for me" class="form__item form__item-el-message"></textarea>
+            </label>
+            <button class="form__button">Send</button>
+          </form>
+        </div>
+        <div class="footer__links">
+          <a href="https://t.me/stormuke" class="footer__link" target="_blank"><img src="./images/telegram_logo_icon_144811.png" alt="Telegramm" class="footer__image-link"></a>
+          <a href="https://vk.com/alex.kazakov" class="footer__link" target="_blank"><img src="./images/vk_black_logo_icon_147058.png" alt="VKontakte" class="footer__image-link"></a>
+          <a href="https://api.whatsapp.com/send?phone=79647171711" class="footer__link" target="_blank"><img src="./images/whatsapp_logo_icon_187612.png" class="footer__image-link"></a>
+        </div>
+        <p class="footer__text">Message me on
+          <a href="https://t.me/stormuke" class="footer__text-link" target="_blank">Telegramm, </a>
+          <a href="https://vk.com/alex.kazakov" class="footer__text-link" target="_blank">VK, </a>
+          <a href="https://api.whatsapp.com/send?phone=79647171711" class="footer__text-link" target="_blank">WhatsApp</a></p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
