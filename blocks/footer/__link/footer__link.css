@@ -1,0 +1,12 @@
+.footer__link {
+  margin-right: 10px;
+  transition: opacity 0.3s linear;
+}
+
+.footer__link:nth-child(3) {
+  margin-right: 0;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}

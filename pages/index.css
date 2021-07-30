@@ -1,0 +1,44 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/subtitle/subtitle.css);
+@import url(../blocks/subtitle/_size/subtitle_size_m.css);
+
+/*header*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__main-information/header__main-information.css);
+@import url(../blocks/header/__navigation-text/header__navigation-text.css);
+@import url(../blocks/header/__navigation/header__navigation.css);
+@import url(../blocks/header/__title/header__title.css);
+
+/*description block*/
+@import url(../blocks/description/description.css);
+@import url(../blocks/description/__text/description__text.css);
+
+/*skills block*/
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/skills/__description-cell/skills__description-cell.css);
+@import url(../blocks/skills/__description-illustration/skills__description-illustration.css);
+@import url(../blocks/skills/__description-text/skills__description-text.css);
+@import url(../blocks/skills/__description/skills__description.css);
+
+/*footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__button/footer__button.css);
+@import url(../blocks/footer/__image-link/footer__image-link.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__text-link/footer__text-link.css);
+
+/*form*/
+@import url(../blocks/form/__area/form__area.css);
+@import url(../blocks/form/__area/_hide/form__area_hide.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__button/form__button.css);
+@import url(../blocks/form/__close/form__close.css);
+@import url(../blocks/form/__item-el-message/form__item-el-message.css);
+@import url(../blocks/form/__item-el-text/form__item-el-text.css);
+@import url(../blocks/form/__item/form__item.css);
+@import url(../blocks/form/__label/form__label.css);

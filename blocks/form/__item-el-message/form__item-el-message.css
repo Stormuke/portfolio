@@ -1,0 +1,6 @@
+.form__item-el-message {
+  border: 1px solid rgba(80, 80, 80, 0.596);
+  resize: none;
+  overflow: auto;
+  width: 97%;
+}

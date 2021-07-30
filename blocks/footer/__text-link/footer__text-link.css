@@ -1,0 +1,8 @@
+.footer__text-link {
+  color: rgba(12, 10, 7, 0.75);
+}
+
+.footer__text-link:hover {
+  color: rgba(145, 145, 145, 0.514);
+  transition: 0.5s;
+}

@@ -1,0 +1,7 @@
+.skills__description {
+  display: flex;
+  flex-direction: row;
+  min-width: 70%;
+  justify-content: space-around;
+  padding: 0 15px;
+}

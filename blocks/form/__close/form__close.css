@@ -1,0 +1,12 @@
+.form__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -4%;
+  right: -4%;
+  transition: opacity 0.4s linear;
+}
+
+.form__close:hover {
+  opacity: 0.7;
+}

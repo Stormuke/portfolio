@@ -1,0 +1,9 @@
+.skills__description-illustration {
+  width: 90px;
+  height: 90px;
+  transition: opacity 0.4s linear;
+}
+
+.skills__description-illustration:hover {
+  opacity: 0.7;
+}

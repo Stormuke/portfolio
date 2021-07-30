@@ -1,0 +1,5 @@
+.form__area {
+  position: absolute;
+  min-width: 60%;
+  z-index: 2;
+}

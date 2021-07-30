@@ -1,0 +1,11 @@
+.header__navigation-text {
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.7);
+  font-weight: 700;
+  font-size: 18px;
+  transition: color 0.3s ease-out;
+}
+
+.header__navigation-text:hover {
+  color: rgba(12, 10, 10, 0.7);
+}
