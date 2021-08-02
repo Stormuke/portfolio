@@ -1,0 +1,19 @@
+.page__button {
+  position: fixed;
+  bottom: 20px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .page__button {
+    width: 10%;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page__button {
+    width: 4%;
+    right: 40px;
+  }
+}

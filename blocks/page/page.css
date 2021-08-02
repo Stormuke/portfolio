@@ -5,7 +5,7 @@ p {
 }
 
 .page {
-  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   font-family: "Gilroy", sans-serif;
   color: rgba(12, 10, 7, 0.75);

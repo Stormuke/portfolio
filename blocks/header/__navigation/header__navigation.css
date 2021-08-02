@@ -1,7 +1,23 @@
 .header__navigation {
   display: flex;
   justify-content: space-around;
-  width: 95%;
-  padding: 35px 0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .header__navigation {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    gap: 30px;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__navigation {
+    flex-direction: row;
+    padding: 35px 0;
+    min-width: 95%;
+  }
 }
