@@ -5,3 +5,17 @@
   align-items: center;
   padding-bottom: 60px;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0;
+  }
+}

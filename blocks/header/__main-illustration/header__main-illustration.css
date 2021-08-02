@@ -1,4 +1,15 @@
 .header__main-illustration {
-  max-width: 90%;
   max-height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header__main-illustration {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__main-illustration {
+    max-width: 90%;
+  }
 }

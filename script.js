@@ -12,6 +12,7 @@ document.querySelector(".form__close").addEventListener("click", formEditClick);
 
 const headerEditClick = () => {
   document.querySelector(".header__navigation").classList.toggle("header__navigation_hide");
+  document.querySelector('.header__button').classList.toggle('header__button_active');
 }
 
 document.querySelector(".header__button").addEventListener("click", headerEditClick);

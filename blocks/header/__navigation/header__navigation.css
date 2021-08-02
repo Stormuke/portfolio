@@ -8,9 +8,10 @@
   .header__navigation {
     display: flex;
     flex-direction: column;
-    min-width: 90%;
+    min-width: 100%;
     gap: 30px;
     padding: 10px 0;
+    overflow: auto;
   }
 }
 

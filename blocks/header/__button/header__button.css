@@ -6,11 +6,52 @@
 
 @media screen and (max-width: 768px) {
   .header__button {
-    align-self: flex-start;
-    padding-top: 20px;
-    width: 40px;
-    height: 40px;
-    padding-left: 4%;
-    opacity: 0.5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    align-self: start;
+  }
+
+  .header__button span,
+  .header__button::before,
+  .header__button::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(12, 10, 10, 0.6);
+  }
+
+  .header__button::before,
+  .header__button::after {
+    content: "";
+  }
+
+  .header__button::before {
+    top: 0;
+  }
+
+  .header__button::after {
+    bottom: 0;
+  }
+
+  .header__button span {
+    top: 50%;
+    transform: scale(1) translate(0, -50%);
+  }
+
+  .header__button.header__button_active span {
+    transform: scale(0);
+  }
+
+  .header__button.header__button_active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .header__button.header__button_active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
   }
 }
