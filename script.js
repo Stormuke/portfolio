@@ -27,3 +27,11 @@ for (let anchor of anchors) {
     })
   })
 }
+
+let btn = document.querySelector('.page__button');
+function buttonOpen() {
+  if (window.pageYOffset > 150) {
+    btn.style.opacity = '.6'
+  } else { btn.style.opacity = '0' }
+}
+window.onscroll = buttonOpen;
