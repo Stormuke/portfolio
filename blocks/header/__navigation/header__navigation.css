@@ -11,7 +11,8 @@
     min-width: 100%;
     gap: 30px;
     padding: 10px 0;
-    overflow: auto;
+    height: 179px;
+    transition: height .2s ease-in;
   }
 }
 

@@ -21,6 +21,7 @@
     height: 10%;
     width: 100%;
     background-color: rgba(12, 10, 10, 0.6);
+    transition: all .2s ease;
   }
 
   .header__button::before,

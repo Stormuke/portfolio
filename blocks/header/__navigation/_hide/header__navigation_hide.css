@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
   .header__navigation_hide {
-    display: none;
+    height: 0;
+    overflow: hidden;
   }
 }
 
