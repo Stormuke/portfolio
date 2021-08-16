@@ -1,10 +1,15 @@
 .form__close {
   width: 40px;
   height: 40px;
+  background-color: rgba(17, 17, 17, 0.822);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 37px;
   position: absolute;
-  top: -4%;
-  right: -4%;
-  transition: opacity 0.4s linear;
+  top: -11%;
+  right: -8%;
+  transition: opacity 0.3s linear;
 }
 
 .form__close:hover {

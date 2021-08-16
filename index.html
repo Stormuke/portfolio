@@ -95,18 +95,11 @@
         </div>
       </section>
 
-      <footer class="footer">
-        <h2 class="title" id="contacts">Contacts</h2>
-        <p class="subtitle">Want to know more or just chat? You are welcome!</p>
-        <button class="footer__button">Send message</button>
-        <div class="form__area form__area_hide">
+      <div class="popup">
+        <div class="popup__container">
+          <button type="button" class="form__close">&#215;</button>
           <form class="form">
             <h2 class="subtitle">Form for your feedback</h2>
-            <img
-              src="./images/cross-black-circular-button_icon-icons.com_73054.png"
-              alt="close"
-              class="form__close"
-            />
             <label for="name" class="form__label"
               >Enter your name:
               <input
@@ -128,9 +121,15 @@
                 class="form__item form__item-el-message"
               ></textarea>
             </label>
-            <button class="form__button">Send</button>
+            <button type="submit" class="form__button">Send</button>
           </form>
         </div>
+      </div>
+
+      <footer class="footer">
+        <h2 class="title" id="contacts">Contacts</h2>
+        <p class="subtitle">Want to know more or just chat? You are welcome!</p>
+        <button type="button" class="footer__button">Send message</button>
         <div class="footer__links">
           <a href="https://t.me/stormuke" class="footer__link" target="_blank"
             ><img

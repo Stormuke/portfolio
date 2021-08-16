@@ -1,25 +1,24 @@
-const handleEditClick = () => {
-  document.querySelector(".form__area").classList.remove("form__area_hide");
-}
-document.querySelector(".footer__button").addEventListener("click", handleEditClick);
-
-const formEditClick = () => {
-  document.querySelector(".form__area").classList.add("form__area_hide");
-}
-document.querySelector(".form__close").addEventListener("click", formEditClick);
-
-const headerEditClick = () => {
-  document.querySelector(".header__navigation").classList.toggle("header__navigation_hide");
-  document.querySelector('.header__button').classList.toggle('header__button_active');
-}
-document.querySelector(".header__button").addEventListener("click", headerEditClick);
-
+let btn = document.querySelector('.page__button');
 const anchors = document.querySelectorAll('a[href*="#"]');
+let popup = document.querySelector('.popup');
+let messageButton = document.querySelector('.footer__button');
+let closePopupButton = document.querySelector('.form__close');
+
+function togglePopup() {
+  popup.classList.toggle('popup__opened');
+}
+
+function buttonOpen() {
+  if (window.pageYOffset > 150) {
+    btn.style.opacity = '.6'
+  } else { btn.style.opacity = '0' }
+}
+
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
 
-    const blockID = anchor.getAttribute('href').substr(1)
+    const blockID = anchor.getAttribute('href').substr(1);
 
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
@@ -28,10 +27,6 @@ for (let anchor of anchors) {
   })
 }
 
-let btn = document.querySelector('.page__button');
-function buttonOpen() {
-  if (window.pageYOffset > 150) {
-    btn.style.opacity = '.6'
-  } else { btn.style.opacity = '0' }
-}
+messageButton.addEventListener('click', togglePopup);
+closePopupButton.addEventListener('click', togglePopup);
 window.onscroll = buttonOpen;

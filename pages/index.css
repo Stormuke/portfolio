@@ -27,17 +27,12 @@
 @import url(../blocks/skills/__description-text/skills__description-text.css);
 @import url(../blocks/skills/__description/skills__description.css);
 
-/*footer*/
-@import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__button/footer__button.css);
-@import url(../blocks/footer/__image-link/footer__image-link.css);
-@import url(../blocks/footer/__link/footer__link.css);
-@import url(../blocks/footer/__links/footer__links.css);
-@import url(../blocks/footer/__text-link/footer__text-link.css);
+/*popup block*/
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup__opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
 
 /*form*/
-@import url(../blocks/form/__area/form__area.css);
-@import url(../blocks/form/__area/_hide/form__area_hide.css);
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__button/form__button.css);
 @import url(../blocks/form/__close/form__close.css);
@@ -45,3 +40,11 @@
 @import url(../blocks/form/__item-el-text/form__item-el-text.css);
 @import url(../blocks/form/__item/form__item.css);
 @import url(../blocks/form/__label/form__label.css);
+
+/*footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__button/footer__button.css);
+@import url(../blocks/footer/__image-link/footer__image-link.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__text-link/footer__text-link.css);
