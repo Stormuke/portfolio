@@ -10,6 +10,7 @@
   top: -11%;
   right: -8%;
   transition: opacity 0.3s linear;
+  padding: 0;
 }
 
 .form__close:hover {
