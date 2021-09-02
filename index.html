@@ -92,16 +92,16 @@
         </div>
       </section>
 
-      <div class="popup">
+      <div class="popup popup_form_feedback">
         <div class="popup__container">
           <button type="button" class="form__close">&#215;</button>
-          <form class="form">
+          <form class="form form_opened" name="form_message">
             <h2 class="subtitle">Form for your feedback</h2>
             <label for="name" class="form__label"
               >Enter your name:
               <input
                 type="text"
-                name="name"
+                name="form_name"
                 id="name"
                 placeholder="Your name"
                 class="form__item form__item-el-text"
@@ -110,7 +110,7 @@
             <label for="message" class="form__label"
               >Enter your message:
               <textarea
-                name="message"
+                name="form_message"
                 id="message"
                 cols="auto"
                 rows="10"
@@ -118,7 +118,9 @@
                 class="form__item form__item-el-message"
               ></textarea>
             </label>
-            <button type="submit" class="form__button">Send</button>
+            <button type="submit" class="form__button form__button_type_submit">
+              Send
+            </button>
           </form>
         </div>
       </div>
@@ -126,7 +128,20 @@
       <footer class="footer">
         <h2 class="title" id="contacts">Contacts</h2>
         <p class="subtitle">Want to know more or just chat? You are welcome!</p>
-        <button type="button" class="footer__button">Send message</button>
+        <button
+          type="button"
+          class="footer__button footer__button_form_feedback"
+        >
+          Send message
+        </button>
+        <article class="footer__container"></article>
+        <template class="footer__template">
+          <div class="feedback">
+            <button type="button" class="feedback__delete">&#215;</button>
+            <h2 class="feedback__title"></h2>
+            <p class="feedback__text"></p>
+          </div>
+        </template>
         <div class="footer__links">
           <a href="https://t.me/stormuke" class="footer__link" target="_blank"
             ><img
@@ -175,6 +190,6 @@
         </p>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

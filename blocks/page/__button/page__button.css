@@ -1,5 +1,4 @@
 .page__button {
-  opacity: 0;
   position: fixed;
   bottom: 20px;
   z-index: 3;
@@ -8,6 +7,11 @@
   border: none;
   border-radius: 50%;
   padding: 0;
+  transition: all 0.3s linear;
+}
+
+.page__button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {

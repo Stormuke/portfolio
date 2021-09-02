@@ -1,19 +1,19 @@
-.form__close {
-  width: 40px;
-  height: 40px;
+.feedback__delete {
+  width: 25px;
+  height: 25px;
   background-color: rgba(17, 17, 17, 0.822);
   border: none;
   border-radius: 50%;
   color: #fff;
-  font-size: 37px;
+  font-size: 24px;
   position: absolute;
-  top: -11%;
-  right: -8%;
+  top: 5%;
+  right: 1%;
   transition: opacity 0.3s linear;
   padding: 0;
   cursor: pointer;
 }
 
-.form__close:hover {
+.feedback__delete:hover {
   opacity: 0.7;
 }
