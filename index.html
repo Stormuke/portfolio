@@ -105,6 +105,9 @@
                 id="name"
                 placeholder="Your name"
                 class="form__item form__item-el-text"
+                maxlength="100"
+                minlength="2"
+                required
               />
             </label>
             <label for="message" class="form__label"
@@ -116,6 +119,9 @@
                 rows="10"
                 placeholder="Enter your message for me"
                 class="form__item form__item-el-message"
+                maxlength="500"
+                minlength="20"
+                required
               ></textarea>
             </label>
             <button type="submit" class="form__button form__button_type_submit">
