@@ -21,6 +21,7 @@ const validationFormConfig = {
 //open popups
 const openPopup = (element) => {
   element.classList.add('popup_opened');
+  document.addEventListener('keydown', closePopupEscapeClick)
 }
 
 //close popups
@@ -101,6 +102,12 @@ handleAnchors.forEach((anchor) => {
 const toggleBurgerMenu = () => {
   burgerMenu.classList.toggle('header__navigation_hide');
   burgerMenuButton.classList.toggle('header__button_active');
+}
+const closePopupEscapeClick = (evt) => {
+  const popupOpened = document.querySelector('.popup_opened')
+  if (evt.key === 'Escape') {
+    closePopup(popupOpened)
+  }
 }
 
 //close popups for X button and overlay
