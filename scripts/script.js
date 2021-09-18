@@ -8,6 +8,16 @@ const burgerMenu = document.querySelector('.header__navigation')
 const modalSubmitForm = document.querySelector('.form_opened')
 const handleSubmitFormButton = modalSubmitForm.querySelector('.form__button_type_submit')
 
+
+const validationFormConfig = {
+  formSelector: '.form',
+  inputSelector: '.form__item',
+  submitButtonSelector: '.form__button',
+  inactiveButtonClass: 'form__button_disabled',
+  inputErrorClass: 'form__item_type_error',
+  errorClass: 'form__item-error_visible'
+}
+
 //open popups
 const openPopup = (element) => {
   element.classList.add('popup__opened');
@@ -75,7 +85,7 @@ initialFeedback.forEach((element) => {
   createFeedbackCard(element)
 })
 
-//smothing scroll for anchors
+//smoothing scroll for anchors
 handleAnchors.forEach((anchor) => {
   anchor.addEventListener('click', (evt) => {
     evt.preventDefault()
@@ -93,8 +103,12 @@ const toggleBurgerMenu = () => {
   burgerMenuButton.classList.toggle('header__button_active');
 }
 
+
+
 handleOpenPopupButton.addEventListener('click',() => {openPopup(modalPopupFeedback)});
 handleClosePopupButton.addEventListener('click', () => {closePopup(modalPopupFeedback)});
 modalSubmitForm.addEventListener('submit', submitFormFeedback)
 window.onscroll = scrollUpButton;
 burgerMenuButton.addEventListener('click', toggleBurgerMenu);
+
+enableValidation(validationFormConfig)

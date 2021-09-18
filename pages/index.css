@@ -40,6 +40,7 @@
 @import url(../blocks/form/__item-el-text/form__item-el-text.css);
 @import url(../blocks/form/__item/form__item.css);
 @import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__item-error/form__item-error.css);
 
 /*footer*/
 @import url(../blocks/footer/footer.css);

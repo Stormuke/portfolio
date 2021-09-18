@@ -1,6 +1,7 @@
 .form__item {
   display: block;
   margin-top: 5px;
+  position: relative;
 }
 
 .form__item:focus {
