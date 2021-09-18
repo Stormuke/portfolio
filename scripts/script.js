@@ -20,12 +20,12 @@ const validationFormConfig = {
 
 //open popups
 const openPopup = (element) => {
-  element.classList.add('popup__opened');
+  element.classList.add('popup_opened');
 }
 
 //close popups
 const closePopup = (element) => {
-  element.classList.remove('popup__opened');
+  element.classList.remove('popup_opened');
 }
 
 const deleteFeedbackCard = (evt) => {
