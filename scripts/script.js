@@ -7,8 +7,8 @@ const burgerMenuButton = document.querySelector('.header__button')
 const burgerMenu = document.querySelector('.header__navigation')
 const modalSubmitForm = document.querySelector('.form_opened')
 const handleSubmitFormButton = modalSubmitForm.querySelector('.form__button_type_submit')
-
-
+const popups = Array.from(document.querySelectorAll('.popup'))
+//validation config
 const validationFormConfig = {
   formSelector: '.form',
   inputSelector: '.form__item',
@@ -103,10 +103,21 @@ const toggleBurgerMenu = () => {
   burgerMenuButton.classList.toggle('header__button_active');
 }
 
+//close popups for X button and overlay
+popups.forEach((element) => {
+  element.addEventListener('mousedown',(evt) => {
+  if (evt.target.classList.contains('form__close') || evt.target.classList.contains('popup_opened'))
+    closePopup(element)
+  })
+})
 
+const openModalWindow = () => {
+  handleSubmitFormButton.classList.add('form__button_disabled')
+  handleSubmitFormButton.setAttribute('disabled', true)
+  openPopup(modalPopupFeedback)
+}
 
-handleOpenPopupButton.addEventListener('click',() => {openPopup(modalPopupFeedback)});
-handleClosePopupButton.addEventListener('click', () => {closePopup(modalPopupFeedback)});
+handleOpenPopupButton.addEventListener('click',openModalWindow);
 modalSubmitForm.addEventListener('submit', submitFormFeedback)
 window.onscroll = scrollUpButton;
 burgerMenuButton.addEventListener('click', toggleBurgerMenu);
