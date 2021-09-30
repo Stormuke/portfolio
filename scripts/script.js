@@ -18,6 +18,7 @@ const validationFormConfig = {
   errorClass: 'form__item-error_visible'
 }
 
+
 const setDefaultSlide = (defaultSlide) => {
 
   slides[defaultSlide].classList.add('header__main-illustration_active')
@@ -33,13 +34,16 @@ const setDefaultSlide = (defaultSlide) => {
 
   slides.forEach(item => item.addEventListener('click', slider))
 }
+
+setDefaultSlide(2)
+
 //open popups
 const openPopup = (element) => {
   element.classList.add('popup_opened');
   document.addEventListener('keydown', closePopupEscapeClick)
 }
 
-setDefaultSlide(2)
+
 //close popups
 const closePopup = (element) => {
   element.classList.remove('popup_opened')
