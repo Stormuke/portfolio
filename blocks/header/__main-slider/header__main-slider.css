@@ -2,3 +2,9 @@
   display: flex;
   width: 95%;
 }
+
+@media screen and (max-width: 768px){
+  .header__main-slider {
+    width: 100%;
+  }
+}
