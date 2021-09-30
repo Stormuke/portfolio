@@ -2,12 +2,12 @@ const handleScrollPageButton = document.querySelector('.page__button')
 const handleAnchors = document.querySelectorAll('a[href*="#"]')
 const modalPopupFeedback = document.querySelector('.popup_form_feedback')
 const handleOpenPopupButton = document.querySelector('.footer__button')
-const handleClosePopupButton = document.querySelector('.form__close')
 const burgerMenuButton = document.querySelector('.header__button')
 const burgerMenu = document.querySelector('.header__navigation')
 const modalSubmitForm = document.querySelector('.form_opened')
 const handleSubmitFormButton = modalSubmitForm.querySelector('.form__button_type_submit')
 const popups = Array.from(document.querySelectorAll('.popup'))
+const slides = document.querySelectorAll('.header__main-illustration')
 //validation config
 const validationFormConfig = {
   formSelector: '.form',
@@ -18,15 +18,32 @@ const validationFormConfig = {
   errorClass: 'form__item-error_visible'
 }
 
+const setDefaultSlide = (defaultSlide) => {
+
+  slides[defaultSlide].classList.add('header__main-illustration_active')
+
+  const clearActiveSlide = () => {
+    slides.forEach(item => item.classList.remove('header__main-illustration_active'))
+  }
+
+  const slider = (evt) => {
+    clearActiveSlide()
+    evt.target.classList.add('header__main-illustration_active')
+  }
+
+  slides.forEach(item => item.addEventListener('click', slider))
+}
 //open popups
 const openPopup = (element) => {
   element.classList.add('popup_opened');
   document.addEventListener('keydown', closePopupEscapeClick)
 }
 
+setDefaultSlide(2)
 //close popups
 const closePopup = (element) => {
-  element.classList.remove('popup_opened');
+  element.classList.remove('popup_opened')
+  document.removeEventListener('keydown', closePopupEscapeClick)
 }
 
 const deleteFeedbackCard = (evt) => {
@@ -41,7 +58,7 @@ function submitFormFeedback(evt) {
   createFeedbackCard({
     name: handleAddFeedbackName.value,
     text: handleAddFeedbackText.value
-})
+  })
 
   modalSubmitForm.reset()
   closePopup(modalPopupFeedback)
@@ -112,9 +129,9 @@ const closePopupEscapeClick = (evt) => {
 
 //close popups for X button and overlay
 popups.forEach((element) => {
-  element.addEventListener('mousedown',(evt) => {
-  if (evt.target.classList.contains('form__close') || evt.target.classList.contains('popup_opened'))
-    closePopup(element)
+  element.addEventListener('mousedown', (evt) => {
+    if (evt.target.classList.contains('form__close') || evt.target.classList.contains('popup_opened'))
+      closePopup(element)
   })
 })
 
@@ -124,7 +141,7 @@ const openModalWindow = () => {
   openPopup(modalPopupFeedback)
 }
 
-handleOpenPopupButton.addEventListener('click',openModalWindow);
+handleOpenPopupButton.addEventListener('click', openModalWindow);
 modalSubmitForm.addEventListener('submit', submitFormFeedback)
 window.onscroll = scrollUpButton;
 burgerMenuButton.addEventListener('click', toggleBurgerMenu);
