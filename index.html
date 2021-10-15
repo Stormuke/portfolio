@@ -64,45 +64,20 @@
       <section class="skills">
         <h2 class="title" id="skills">Skills</h2>
         <p class="subtitle">I use in my work</p>
-        <div class="skills__description">
-          <div class="skills__description-cell">
-            <a href="https://ru.wikipedia.org/wiki/HTML5" target="_blank"
-              ><img
-                src="./images/file_type_html_icon_130541.png"
-                alt="HTML5"
-                class="skills__description-illustration"
-            /></a>
-            <p class="skills__description-text">HTML 5</p>
-          </div>
-          <div class="skills__description-cell">
-            <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"
-              ><img
-                src="./images/file_type_css_icon_130661.png"
-                alt="CSS"
-                class="skills__description-illustration"
-            /></a>
-            <p class="skills__description-text">CSS</p>
-          </div>
-          <div class="skills__description-cell">
-            <a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank"
-              ><img
-                src="./images/javascript_icon_130900.png"
-                alt="JavaScript"
-                class="skills__description-illustration"
-            /></a>
-            <p class="skills__description-text">JavaScript</p>
-          </div>
-          <div class="skills__description-cell">
-            <a href="https://ru.wikipedia.org/wiki/Figma" target="_blank"
-              ><img
-                src="./images/Figma.png"
-                alt="Figma"
-                class="skills__description-illustration"
-            /></a>
-            <p class="skills__description-text">Figma</p>
-          </div>
-        </div>
+        <div class="skills__description"></div>
       </section>
+
+      <template class="skills__description-cell-template">
+        <div class="skills__description-cell">
+          <a href="#" target="_blank"
+          class="skills__link"><img
+            src="#"
+            alt="alt"
+            class="skills__description-illustration"
+          /></a>
+          <p class="skills__description-text"></p>
+        </div>
+      </template>
 
       <div class="popup popup_form_feedback">
         <div class="popup__container">
@@ -167,7 +142,7 @@
         <div class="footer__links">
           <a href="https://t.me/stormuke" class="footer__link" target="_blank"
             ><img
-              src="./images/telegram_logo_icon_144811.png"
+              src="./images/telegram_logo_icon_144811.svg"
               alt="Telegram"
               class="footer__image-link"
           /></a>
@@ -176,7 +151,7 @@
             class="footer__link"
             target="_blank"
             ><img
-              src="./images/vk_black_logo_icon_147058.png"
+              src="./images/vk_black_logo_icon_147058.svg"
               alt="VKontakte"
               class="footer__image-link"
           /></a>
@@ -185,7 +160,7 @@
             class="footer__link"
             target="_blank"
             ><img
-              src="./images/whatsapp_logo_icon_187612.png"
+              src="./images/whatsapp_black_logo_icon_147050.svg"
               alt="WhatsApp"
               class="footer__image-link"
           /></a>
@@ -213,7 +188,6 @@
         </p>
       </footer>
     </div>
-    <script src="./scripts/validate.js"></script>
-    <script src="./scripts/script.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
   </body>
 </html>

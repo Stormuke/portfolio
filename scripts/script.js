@@ -1,3 +1,19 @@
+import FormValidator from "./FormValidator.js";
+
+//array
+const initialFeedback = [
+  {
+    name: 'Alexey Kazakov',
+    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.'
+  }]
+
+const initialSkills = [
+  {name: 'HTML 5', image: '../images/file_type_html_icon_130541.svg', href: 'https://ru.wikipedia.org/wiki/HTML5'},
+  {name: 'CSS', image: '../images/file_type_css_icon_130661.svg', href: 'https://ru.wikipedia.org/wiki/CSS'},
+  {name: 'JavaScript', image: '../images/javascript_icon_130900.svg', href: 'https://ru.wikipedia.org/wiki/JavaScript'},
+  {name: 'Webpack', image: '../images/webpack_original_logo_icon_146300.svg', href: 'https://ru.wikipedia.org/wiki/webpack'},
+  {name: 'Figma', image: '../images/figma_logo_icon_170157.svg', href: 'https://ru.wikipedia.org/wiki/Figma'}]
+
 const handleScrollPageButton = document.querySelector('.page__button')
 const handleAnchors = document.querySelectorAll('a[href*="#"]')
 const modalPopupFeedback = document.querySelector('.popup_form_feedback')
@@ -5,9 +21,11 @@ const handleOpenPopupButton = document.querySelector('.footer__button')
 const burgerMenuButton = document.querySelector('.header__button')
 const burgerMenu = document.querySelector('.header__navigation')
 const modalSubmitForm = document.querySelector('.form_opened')
-const handleSubmitFormButton = modalSubmitForm.querySelector('.form__button_type_submit')
 const popups = Array.from(document.querySelectorAll('.popup'))
 const slides = document.querySelectorAll('.header__main-illustration')
+const feedbackForm = document.forms["form_message"]
+const skillsCellTemplate = document.querySelector('.skills__description-cell-template').content.querySelector('.skills__description-cell')
+const skillsContainer = document.querySelector('.skills__description')
 //validation config
 const validationFormConfig = {
   formSelector: '.form',
@@ -18,9 +36,28 @@ const validationFormConfig = {
   errorClass: 'form__item-error_visible'
 }
 
+//create new instance of form validator
+const feedbackFormValidation = new FormValidator(validationFormConfig, feedbackForm)
+
+const createSkillCard = (item) => {
+  const skillsElement = skillsCellTemplate.cloneNode(true)
+  const skillImage = skillsElement.querySelector('.skills__description-illustration')
+  skillsElement.querySelector('.skills__description-text').textContent = item.name
+  skillImage.src = item.image
+  skillImage.alt = item.name
+  skillsElement.querySelector('.skills__link').href = item.href
+  return skillsElement
+}
+
+const insertSkillCard = (item) => {
+  skillsContainer.append(createSkillCard(item))
+}
+
+initialSkills.forEach((item) => {
+    insertSkillCard(item)
+})
 
 const setDefaultSlide = (defaultSlide) => {
-
   slides[defaultSlide].classList.add('header__main-illustration_active')
 
   const clearActiveSlide = () => {
@@ -32,7 +69,9 @@ const setDefaultSlide = (defaultSlide) => {
     evt.target.classList.add('header__main-illustration_active')
   }
 
-  slides.forEach(item => item.addEventListener('click', slider))
+  slides.forEach((item) => {
+    item.addEventListener('click', slider)
+  })
 }
 
 setDefaultSlide(2)
@@ -57,11 +96,10 @@ const deleteFeedbackCard = (evt) => {
 const handleAddFeedbackName = document.form_message['form_name']
 const handleAddFeedbackText = document.form_message['form_message']
 
-function submitFormFeedback(evt) {
-  evt.preventDefault();
+function submitFormFeedback() {
   createFeedbackCard({
-    name: handleAddFeedbackName.value,
-    text: handleAddFeedbackText.value
+    name: handleAddFeedbackName.value[0].toUpperCase() + handleAddFeedbackName.value.slice(1),
+    text: handleAddFeedbackText.value[0].toUpperCase() + handleAddFeedbackText.value.slice(1)
   })
 
   modalSubmitForm.reset()
@@ -79,13 +117,6 @@ let scrollUpButton = () => {
 
 const elementTemplate = document.querySelector('.footer__template').content
 const cardsContainer = document.querySelector('.footer__container')
-
-//array
-const initialFeedback = [
-  {
-    name: 'Alexey Kazakov',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.'
-  }]
 
 //return card
 const createCard = (element) => {
@@ -124,6 +155,7 @@ const toggleBurgerMenu = () => {
   burgerMenu.classList.toggle('header__navigation_hide');
   burgerMenuButton.classList.toggle('header__button_active');
 }
+
 const closePopupEscapeClick = (evt) => {
   const popupOpened = document.querySelector('.popup_opened')
   if (evt.key === 'Escape') {
@@ -140,8 +172,7 @@ popups.forEach((element) => {
 })
 
 const openModalWindow = () => {
-  handleSubmitFormButton.classList.add('form__button_disabled')
-  handleSubmitFormButton.setAttribute('disabled', true)
+  feedbackFormValidation.disableSubmitButton()
   openPopup(modalPopupFeedback)
 }
 
@@ -150,4 +181,5 @@ modalSubmitForm.addEventListener('submit', submitFormFeedback)
 window.onscroll = scrollUpButton;
 burgerMenuButton.addEventListener('click', toggleBurgerMenu);
 
-enableValidation(validationFormConfig)
+
+feedbackFormValidation.enableValidation()
