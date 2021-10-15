@@ -8,11 +8,11 @@ const initialFeedback = [
   }]
 
 const initialSkills = [
-  {name: 'HTML 5', image: '../images/file_type_html_icon_130541.svg', href: 'https://ru.wikipedia.org/wiki/HTML5'},
-  {name: 'CSS', image: '../images/file_type_css_icon_130661.svg', href: 'https://ru.wikipedia.org/wiki/CSS'},
-  {name: 'JavaScript', image: '../images/javascript_icon_130900.svg', href: 'https://ru.wikipedia.org/wiki/JavaScript'},
-  {name: 'Webpack', image: '../images/webpack_original_logo_icon_146300.svg', href: 'https://ru.wikipedia.org/wiki/webpack'},
-  {name: 'Figma', image: '../images/figma_logo_icon_170157.svg', href: 'https://ru.wikipedia.org/wiki/Figma'}]
+  {name: 'HTML 5', image: './images/file_type_html_icon_130541.svg', href: 'https://ru.wikipedia.org/wiki/HTML5'},
+  {name: 'CSS', image: './images/file_type_css_icon_130661.svg', href: 'https://ru.wikipedia.org/wiki/CSS'},
+  {name: 'JavaScript', image: './images/javascript_icon_130900.svg', href: 'https://ru.wikipedia.org/wiki/JavaScript'},
+  {name: 'Webpack', image: './images/webpack_original_logo_icon_146300.svg', href: 'https://ru.wikipedia.org/wiki/webpack'},
+  {name: 'Figma', image: './images/figma_logo_icon_170157.svg', href: 'https://ru.wikipedia.org/wiki/Figma'}]
 
 const handleScrollPageButton = document.querySelector('.page__button')
 const handleAnchors = document.querySelectorAll('a[href*="#"]')
