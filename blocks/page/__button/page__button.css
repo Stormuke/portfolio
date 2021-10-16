@@ -1,5 +1,6 @@
 .page__button {
   position: fixed;
+  visibility: hidden;
   bottom: 20px;
   z-index: 3;
   background-color: #000;

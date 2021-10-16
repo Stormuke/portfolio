@@ -175,10 +175,10 @@ function submitFormFeedback() {
 
 //hide button scroll up
 let scrollUpButton = () => {
-  if (window.pageYOffset > 150) {
-    handleScrollPageButton.style.visibility = 'visible'
-  } else {
+  if (window.pageYOffset < 150) {
     handleScrollPageButton.style.visibility = 'hidden'
+  } else {
+    handleScrollPageButton.style.visibility = 'visible'
   }
 }
 
