@@ -1,6 +1,24 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../blocks/fullscreen/fulscreen.css);
+@import url(../blocks/fullscreen/__title/fullscreen__title.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__swap-button/page__swap-button.css);
+@import url(../blocks/page/__swap-button/_up/page__swap-button_up.css);
+@import url(../blocks/page/__swap-button/_center/page__swap-button_center.css);
+@import url(../blocks/page/__swap-button/_down/page__swap-button_down.css);
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/slider/__container/slider__container.css);
+@import url(../blocks/main-slide/main-slide.css);
+@import url(../blocks/main-slide/__image/main-slide__image.css);
+
+@import url(../blocks/controls/controls.css);
+@import url(../blocks/controls/__button/controls__button.css);
+@import url(../blocks/controls/__button/_down/controls__button_down.css);
+@import url(../blocks/controls/__button/_up/controls__button_up.css);
+
+
+@import url(../blocks/hidden/hidden.css);
 @import url(../blocks/page/__button/page__button.css);
 @import url(../blocks/title/title.css);
 @import url(../blocks/subtitle/subtitle.css);

@@ -10,7 +10,65 @@
   </head>
 
   <body>
-    <div class="page">
+    <div class="page slider hidden">
+      <div class="slider__container">
+        <div style="background: linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%);">
+          <h2 class="title">Snow in the desert</h2>
+          <p>Love, death & robots</p>
+        </div>
+        <div style="background: linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%);">
+          <h2 class="title">Life Hutch</h2>
+          <p>Love, death & robots</p>
+        </div>
+        <div style="background: linear-gradient(221.87deg, #f4a2ae 1%, #f4a2ae 128%);">
+          <h2 class="title">Zima Blue</h2>
+          <p>Love, death & robots</p>
+        </div>
+        <div style="background: linear-gradient(220.16deg, #4f9674 -8%, #4e8a6e 138%);">
+          <h2 class="title">Automated Customer Service</h2>
+          <p>Love, death & robots</p>
+        </div>
+      </div>
+      <div class="main-slide">
+        <div class="main-slide__image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1511746315387-c4a76990fdce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+"
+        ></div>
+        <div class="main-slide__image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1608551279839-84c7ca889b80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+          "
+        ></div>
+        <div class="main-slide__image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1609522134706-2de3908013c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+          "
+        ></div>
+        <div class="main-slide__image"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1615064779799-df1bfcc66ed0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80');
+          "
+        ></div>
+      </div>
+      <div class="controls">
+        <button class="controls__button controls__button_down">
+          <i class="controls__fas controls__fas_arrow_down"></i>
+        </button>
+        <button class="controls__button controls__button_up">
+          <i class="controls__fas controls__fas_arrow_up"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="page fullscreen">
+      <button type="button" class="page__swap-button page__swap-button_up"></button>
+      <button type="button" class="page__swap-button page__swap-button_center"></button>
+      <button type="button" class="page__swap-button page__swap-button_down"></button>
+      <p class="fullscreen__title">Personal site by Alexey Kazakov</p>
+    </div>
+
+    <div class="page hidden">
       <a href="#header"
         ><button type="button" class="page__button">&#9650;</button></a
       >

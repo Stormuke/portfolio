@@ -1,0 +1,5 @@
+.controls__button_up {
+  transform: translateY(-100%) translateX(-114%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

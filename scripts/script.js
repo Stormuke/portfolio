@@ -38,6 +38,73 @@ const validationFormConfig = {
 
 //create new instance of form validator
 const feedbackFormValidation = new FormValidator(validationFormConfig, feedbackForm)
+const pages = Array.from(document.querySelectorAll('.page'))
+
+const handleScrollUpButton = document.querySelector('.page__swap-button_up')
+const handleScrollDownButton = document.querySelector('.page__swap-button_down')
+const handleScrollCenterButton = document.querySelector('.page__swap-button_center')
+
+const handleUpPage = () => {
+  pages[0].classList.remove('hidden')
+  pages[1].classList.add('hidden')
+  pages[2].classList.add('hidden')
+}
+const handleCenterPage = () => {
+  pages[0].classList.add('hidden')
+  pages[1].classList.remove('hidden')
+  pages[2].classList.add('hidden')
+}
+const handleDownPage = () => {
+  pages[0].classList.add('hidden')
+  pages[1].classList.add('hidden')
+  pages[2].classList.remove('hidden')
+}
+
+handleScrollUpButton.addEventListener('click', handleUpPage)
+handleScrollDownButton.addEventListener('click', handleDownPage)
+handleScrollCenterButton.addEventListener('click', handleCenterPage)
+
+const upButton = document.querySelector('.controls__button_up')
+const downButton = document.querySelector('.controls__button_down')
+const container = document.querySelector('.slider')
+const sideBar = document.querySelector('.slider__container')
+const mainSlide = document.querySelector('.main-slide')
+const slidesCount = mainSlide.querySelectorAll('div').length
+let activeSlideIndex = 0
+
+sideBar.style.top = `-${(slidesCount - 1) * 100}vh`
+
+upButton.addEventListener('click', () => {
+  changeSlide('up')
+})
+
+downButton.addEventListener('click', () => {
+  changeSlide('down')
+})
+
+function changeSlide(direction) {
+  if (direction === 'up') {
+    activeSlideIndex++
+    if (activeSlideIndex === slidesCount) {
+      activeSlideIndex = 0
+    }
+  } else if (direction === 'down') {
+    activeSlideIndex--
+    if (activeSlideIndex < 0) {
+      activeSlideIndex = slidesCount - 1
+    }
+  }
+
+  const height = container.clientHeight
+  mainSlide.style.transform = `translateY(-${activeSlideIndex * height}px)`
+  sideBar.style.transform = `translateY(${activeSlideIndex * height}px)`
+}
+
+
+
+
+
+
 
 const createSkillCard = (item) => {
   const skillsElement = skillsCellTemplate.cloneNode(true)
