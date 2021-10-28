@@ -40,6 +40,7 @@ const validationFormConfig = {
 const feedbackFormValidation = new FormValidator(validationFormConfig, feedbackForm)
 const pages = Array.from(document.querySelectorAll('.page'))
 
+
 const handleScrollUpButton = document.querySelector('.page__swap-button_up')
 const handleScrollDownButton = document.querySelector('.page__swap-button_down')
 const handleScrollCenterButton = document.querySelector('.page__swap-button_center')
