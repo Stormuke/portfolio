@@ -100,12 +100,6 @@ function changeSlide(direction) {
   sideBar.style.transform = `translateY(${activeSlideIndex * height}px)`
 }
 
-
-
-
-
-
-
 const createSkillCard = (item) => {
   const skillsElement = skillsCellTemplate.cloneNode(true)
   const skillImage = skillsElement.querySelector('.skills__description-illustration')
