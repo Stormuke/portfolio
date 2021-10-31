@@ -21,6 +21,9 @@
 @import url(../blocks/slider/__container/slider__container.css);
 @import url(../blocks/main-slide/main-slide.css);
 @import url(../blocks/main-slide/__image/main-slide__image.css);
+@import url(../blocks/main-slide/__image/_type/main-slide__image_type_how-to-learn.css);
+@import url(../blocks/main-slide/__image/_type/main-slide__image_type_mesto.css);
+@import url(../blocks/main-slide/__image/_type/main-slide__image_type_russian-travel.css);
 
 @import url(../blocks/controls/controls.css);
 @import url(../blocks/controls/__button/controls__button.css);
