@@ -1,0 +1,12 @@
+.title_size_s {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .title_size_s {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

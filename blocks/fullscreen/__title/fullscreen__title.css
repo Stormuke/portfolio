@@ -3,3 +3,10 @@
   color: white;
   margin: 0 0 100px 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .fullscreen__title {
+    margin: 0 0 33px 25px;
+    font-size: 19px;
+  }
+}

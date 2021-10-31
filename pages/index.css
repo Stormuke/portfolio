@@ -25,8 +25,10 @@
 
 @import url(../blocks/page/__button/page__button.css);
 @import url(../blocks/title/title.css);
+@import url(../blocks/title/_size/title_size_s.css);
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/subtitle/_size/subtitle_size_m.css);
+@import url(../blocks/subtitle/_size/subtitle_size_s.css);
 
 /*header*/
 @import url(../blocks/header/header.css);
