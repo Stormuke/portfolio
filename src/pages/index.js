@@ -9,11 +9,11 @@ const initialFeedback = [
   }]
 
 const initialSkills = [
-  {name: 'HTML 5', image: 'https://radioprog.ru/uploads/media/articles/0001/01/2cc857f7f034ad92dae834fba16b89999b455fb0.png', href: 'https://ru.wikipedia.org/wiki/HTML5'},
-  {name: 'CSS', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/1200px-Devicon-css3-plain.svg.png', href: 'https://ru.wikipedia.org/wiki/CSS'},
-  {name: 'JavaScript', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png', href: 'https://ru.wikipedia.org/wiki/JavaScript'},
-  {name: 'Webpack', image: 'https://web-creator.ru/uploads/Page/16/webpack.svg', href: 'https://ru.wikipedia.org/wiki/webpack'},
-  {name: 'Figma', image: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png', href: 'https://ru.wikipedia.org/wiki/Figma'}]
+  {name: 'HTML 5', image: 'https://raw.githubusercontent.com/Stormuke/portfolio/e53f0411e92f89977253598a86a34e8635d96001/src/images/file_type_html_icon_130541.svg', href: 'https://ru.wikipedia.org/wiki/HTML5'},
+  {name: 'CSS', image: 'https://raw.githubusercontent.com/Stormuke/portfolio/e53f0411e92f89977253598a86a34e8635d96001/src/images/file_type_css_icon_130661.svg', href: 'https://ru.wikipedia.org/wiki/CSS'},
+  {name: 'JavaScript', image: 'https://raw.githubusercontent.com/Stormuke/portfolio/e53f0411e92f89977253598a86a34e8635d96001/src/images/javascript_icon_130900.svg', href: 'https://ru.wikipedia.org/wiki/JavaScript'},
+  {name: 'Webpack', image: 'https://raw.githubusercontent.com/Stormuke/portfolio/e53f0411e92f89977253598a86a34e8635d96001/src/images/webpack_original_logo_icon_146300.svg', href: 'https://ru.wikipedia.org/wiki/webpack'},
+  {name: 'Figma', image: 'https://raw.githubusercontent.com/Stormuke/portfolio/e53f0411e92f89977253598a86a34e8635d96001/src/images/figma_logo_icon_170157.svg', href: 'https://ru.wikipedia.org/wiki/Figma'}]
 
 const handleScrollPageButton = document.querySelector('.page__button')
 const handleAnchors = document.querySelectorAll('a[href*="#"]')
