@@ -6,6 +6,6 @@
 
 @media screen and (max-width: 768px){
   .controls__button_up {
-    transform: translateY(-100%) translateX(-113%);
+    transform: translateY(-100%) translateX(-109%);
   }
 }
