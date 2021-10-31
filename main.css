@@ -18,7 +18,7 @@ h1,p{-webkit-margin-before:0;-webkit-margin-after:0;margin-block-end:0;margin-bl
 .slider__container{height:100%;left:0;position:absolute;top:0;transition:transform .5s ease-in-out;width:35%}.slider__container>div{align-items:center;color:#fff;display:flex;flex-direction:column;height:100%;justify-content:center;width:100%}
 .main-slide{height:100%;left:35%;position:absolute;top:0;transition:transform .5s ease-in-out;width:65%}
 .main-slide__image{background-position:top;background-repeat:no-repeat;background-size:cover;height:100vh;width:100%}@media screen and (max-width:768px){.main-slide__image{background-position:50%}}
-.main-slide__image_type_how-to-learn{background-image:url(ae89a144002143a6d7f9.png)}
+.main-slide__image_type_how-to-learn{background-image:url(https://raw.githubusercontent.com/Stormuke/portfolio/main/src/images/how-to-learn.png)}
 .main-slide__image_type_mesto{background-image:url(be6f7130304844c60b90.png)}
 .main-slide__image_type_russian-travel{background-image:url(1582515105c2897f53cf.png)}
 .controls{left:35%;position:absolute;top:50%;z-index:100}
