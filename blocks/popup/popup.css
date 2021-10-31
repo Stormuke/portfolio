@@ -5,7 +5,7 @@
   background-color: rgba(34, 34, 34, 0.9);
   position: fixed;
   inset: 0;
-  z-index: 5;
+  z-index: 100;
   align-items: center;
   justify-content: center;
   transition: opacity 0.3s linear, visibility 0.3s linear;
