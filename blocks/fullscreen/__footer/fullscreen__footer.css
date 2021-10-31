@@ -1,0 +1,13 @@
+.fullscreen__footer {
+  font-size: 15px;
+  color: white;
+  margin: 0 100px 40px 0;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .fullscreen__footer {
+    margin: 0 25px 80px 0;
+    font-size: 12px;
+  }
+}

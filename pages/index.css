@@ -5,7 +5,13 @@
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/hidden/hidden.css);
 
+@import url(../blocks/fullscreen/__wrapper/fullscreen__wrapper.css);
 @import url(../blocks/fullscreen/__title/fullscreen__title.css);
+@import url(../blocks/fullscreen/__subtitle/fullscreen__subtitle.css);
+@import url(../blocks/fullscreen/__links/fullscreen__links.css);
+@import url(../blocks/fullscreen/__link/fullscreen__link.css);
+@import url(../blocks/fullscreen/__image/fullscreen__image.css);
+@import url(../blocks/fullscreen/__footer/fullscreen__footer.css);
 
 @import url(../blocks/page/__swap-button/page__swap-button.css);
 @import url(../blocks/page/__swap-button/_up/page__swap-button_up.css);

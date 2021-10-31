@@ -1,0 +1,18 @@
+@keyframes wrapper {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fullscreen__wrapper {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 30vh;
+  animation: wrapper 6s forwards;
+}

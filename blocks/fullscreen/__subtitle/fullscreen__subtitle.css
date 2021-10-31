@@ -1,0 +1,10 @@
+.fullscreen__subtitle {
+  margin: 20px 0 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+  .fullscreen__subtitle {
+    font-size: 13px;
+  }
+}

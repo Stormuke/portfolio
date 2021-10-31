@@ -1,0 +1,9 @@
+.fullscreen__link {
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 500ms linear;
+}
+
+.fullscreen__link:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}

@@ -1,6 +1,7 @@
 .fullscreen {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 100%;
   background: center center no-repeat

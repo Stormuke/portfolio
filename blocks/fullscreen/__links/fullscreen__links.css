@@ -1,0 +1,11 @@
+.fullscreen__links {
+  display: flex;
+  gap: 150px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){
+  .fullscreen__links{
+    gap: 50px;
+  }
+}

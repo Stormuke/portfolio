@@ -1,0 +1,25 @@
+@keyframes image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fullscreen__image {
+  border: white 2px solid;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  animation: image 500ms forwards;
+}
+
+@media screen and (max-width: 768px){
+  .fullscreen__image{
+    width: 40px;
+    height: 40px;
+  }
+}
+
