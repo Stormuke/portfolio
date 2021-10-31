@@ -3,7 +3,7 @@
   transition: opacity 0.3s linear;
 }
 
-.footer__link:nth-child(3) {
+.footer__link:last-child {
   margin-right: 0;
 }
 
