@@ -19,8 +19,8 @@ h1,p{-webkit-margin-before:0;-webkit-margin-after:0;margin-block-end:0;margin-bl
 .main-slide{height:100%;left:35%;position:absolute;top:0;transition:transform .5s ease-in-out;width:65%}
 .main-slide__image{background-position:top;background-repeat:no-repeat;background-size:cover;height:100vh;width:100%}@media screen and (max-width:768px){.main-slide__image{background-position:50%}}
 .main-slide__image_type_how-to-learn{background-image:url(https://raw.githubusercontent.com/Stormuke/portfolio/main/src/images/how-to-learn.png)}
-.main-slide__image_type_mesto{background-image:url(be6f7130304844c60b90.png)}
-.main-slide__image_type_russian-travel{background-image:url(1582515105c2897f53cf.png)}
+.main-slide__image_type_mesto{background-image:url(https://raw.githubusercontent.com/Stormuke/portfolio/main/src/images/mesto.png)}
+.main-slide__image_type_russian-travel{background-image:url(https://raw.githubusercontent.com/Stormuke/portfolio/main/src/images/russian-travel.png)}
 .controls{left:35%;position:absolute;top:50%;z-index:100}
 .controls__button{background-color:#fff;border:none;color:#aaa;cursor:pointer;font-size:16px;padding:15px}@media screen and (max-width:768px){.controls__button{font-size:10px;padding:15px}}
 .controls__button_down{border-bottom-left-radius:5px;border-top-left-radius:5px;transform:translateX(-100%)}
