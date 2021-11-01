@@ -17,6 +17,11 @@ p {
   border: 1px solid rgba(230, 230, 230, 0.932);
 }
 
+* {
+  scrollbar-width: none;
+  scrollbar-color: rgba(80, 80, 80, 0.5) rgba(80, 80, 80, 0.05);
+}
+
 .page {
   min-width: 320px;
   margin: 0 auto;
