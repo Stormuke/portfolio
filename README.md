@@ -17,5 +17,5 @@
 - Плавная прокрутка по якорям
 
 
-[Ссылка на портфолио](https://stormuke.github.io/portfolio/)
+[Ссылка на портфолио](https://alex-k.ru)
 
