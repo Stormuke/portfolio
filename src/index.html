@@ -10,12 +10,16 @@
 
   <body class="container">
   <div class="page fullscreen">
+    <div class="page__languages">
+      <button class="page__languages page__languages_type_ru">Ru</button>
+      <button class="page__languages page__languages_type_eng page__languages_type_underline">Eng</button>
+    </div>
     <button type="button" class="page__swap-button page__swap-button_up">Start Page</button>
     <button type="button" class="page__swap-button page__swap-button_center">My Projects</button>
     <button type="button" class="page__swap-button page__swap-button_down">Main Site</button>
     <div class="fullscreen__wrapper">
       <p class="fullscreen__title">Alexey Kazakov</p>
-      <p class="fullscreen__subtitle">Front-end Developer</p>
+      <p class="fullscreen__subtitle">Front - end Developer</p>
       <div class="fullscreen__links">
         <a href="https://github.com/Stormuke" target="_blank" class="fullscreen__link"><img src="<%=require('./images/github_white.svg')%>" alt="" class="fullscreen__image"></a>
         <a href="https://vk.com/alex.kazakov" target="_blank" class="fullscreen__link"><img src="<%=require('./images/vk_white.svg')%>" alt="" class="fullscreen__image"></a>
@@ -28,16 +32,16 @@
     <div class="page slider hidden">
       <div class="slider__container">
         <div style="background: linear-gradient(215.32deg, #2f80ed -1%, #f2f2f2 124%); height: 100vh;">
-          <h2 class="title title_size_s">Project How to learn</h2>
-          <p class="subtitle subtitle_size_s">First simple landing page</p>
+          <h2 class="title title_size_s title_name_how-to-learn">Project How to learn</h2>
+          <p class="subtitle subtitle_size_s subtitle_name_how-to-learn">First simple landing page</p>
         </div>
         <div style="background: linear-gradient(221.87deg, #150e0c 1%, #a7d6da 128%); height: 100vh;">
-          <h2 class="title title_size_s">Project Russian travel</h2>
-          <p class="subtitle subtitle_size_s">Landing page with full mobile adaptivity</p>
+          <h2 class="title title_size_s title_name_russian-travel">Project Russian travel</h2>
+          <p class="subtitle subtitle_size_s subtitle_name_russian-travel">Landing page with full mobile adaptivity</p>
         </div>
         <div style="background: linear-gradient(220.16deg, #060c17 -8%, #36180b 138%); height: 100vh;">
-          <h2 class="title title_size_s">Project Mesto</h2>
-          <p class="subtitle subtitle_size_s">Single page application</p>
+          <h2 class="title title_size_s title_name_mesto">Project Mesto</h2>
+          <p class="subtitle subtitle_size_s subtitle_name_mesto">Single page application</p>
         </div>
       </div>
       <div class="main-slide">
@@ -70,14 +74,13 @@
       <header class="header" id="header">
         <div class="header__button"><span></span></div>
         <nav class="header__navigation header__navigation_hide">
-          <a href="#home" class="header__navigation-text">Home</a>
-          <a href="#about_me" class="header__navigation-text">About me</a>
-          <a href="#skills" class="header__navigation-text">Skills</a>
-          <a href="#contacts" class="header__navigation-text">Contacts</a>
+          <a href="#about_me" class="header__navigation-text head__text_type_about">About me</a>
+          <a href="#skills" class="header__navigation-text head__text_type_skills">Skills</a>
+          <a href="#contacts" class="header__navigation-text head__text_type_contacts">Contacts</a>
         </nav>
         <div class="header__main-information" id="home">
           <h1 class="header__title">Alexey Kazakov</h1>
-          <p class="subtitle subtitle_size_m">
+          <p class="subtitle subtitle_size_m subtitle_place_header">
             Front-end Developer 28 years old, Moscow
           </p>
         </div>
@@ -101,22 +104,22 @@
       </header>
 
       <section class="description">
-        <h2 class="title" id="about_me">About me</h2>
-        <p class="description__text">
+        <h2 class="title head__text_type_about" id="about_me">About me</h2>
+        <p class="description__text description__text_type_me">
           Hi, I'm Alexey – Front-end developer from Moscow. I'm interested in
           develop and everything connected with it.
         </p>
-        <p class="description__text">
+        <p class="description__text description__text_type_study">
           I'm studying at courses "Web developer" in Yandex.Praktikum.
         </p>
-        <p class="description__text">
+        <p class="description__text description__text_type_projects">
           Ready to implement excellent projects with wonderful people.
         </p>
       </section>
 
       <section class="skills">
-        <h2 class="title" id="skills">Skills</h2>
-        <p class="subtitle">I use in my work</p>
+        <h2 class="title head__text_type_skills" id="skills">Skills</h2>
+        <p class="subtitle subtitle_type_use">I use in my work</p>
         <div class="skills__description"></div>
       </section>
 
@@ -136,14 +139,14 @@
         <div class="popup__container">
           <button type="button" class="form__close">&#215;</button>
           <form class="form form_opened" name="form_message" novalidate>
-            <h2 class="subtitle">Form for your feedback</h2>
-            <label for="name" class="form__label"
+            <h2 class="subtitle form_type_feedback">Form for your feedback</h2>
+            <label for="name" class="form__label form_type_name"
               >Enter your name:
               <input
                 type="text"
                 name="form_name"
                 id="name"
-                placeholder="Your name"
+                placeholder="Enter your name"
                 class="form__item form__item-el-text"
                 maxlength="100"
                 minlength="2"
@@ -152,14 +155,14 @@
               <span class="form__item-error form__item-error_visible" id="name-error"></span>
             </label>
 
-            <label for="message" class="form__label"
+            <label for="message" class="form__label form_type_message"
               >Enter your message:
               <textarea
                 name="form_message"
                 id="message"
                 cols="auto"
                 rows="10"
-                placeholder="Enter your message for me"
+                placeholder="Enter your message"
                 class="form__item form__item-el-message"
                 maxlength="500"
                 minlength="5"
@@ -176,8 +179,8 @@
       </div>
 
       <footer class="footer">
-        <h2 class="title" id="contacts">Contacts</h2>
-        <p class="subtitle">Want to know more or just chat? You are welcome!</p>
+        <h2 class="title head__text_type_contacts" id="contacts">Contacts</h2>
+        <p class="subtitle subtitle_type_feedback">Want to know more or just chat? You are welcome!</p>
         <button
           type="button"
           class="footer__button footer__button_form_feedback"

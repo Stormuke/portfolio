@@ -17,6 +17,10 @@
 @import url(../blocks/page/__swap-button/_up/page__swap-button_up.css);
 @import url(../blocks/page/__swap-button/_center/page__swap-button_center.css);
 @import url(../blocks/page/__swap-button/_down/page__swap-button_down.css);
+@import url(../blocks/page/__languages/page__languages.css);
+@import url(../blocks/page/__languages/_type/page__languages_type_eng.css);
+@import url(../blocks/page/__languages/_type/page__languages_type_ru.css);
+@import url(../blocks/page/__languages/_type/page__languages_type_underline.css);
 
 @import url(../blocks/slider/__container/slider__container.css);
 @import url(../blocks/main-slide/main-slide.css);

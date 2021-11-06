@@ -1,0 +1,9 @@
+.page__languages_type_ru {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0;
+  margin: 0 3px 0 0;
+  position: relative;
+  cursor: pointer;
+}

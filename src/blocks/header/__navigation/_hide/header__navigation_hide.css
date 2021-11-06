@@ -2,6 +2,8 @@
   .header__navigation_hide {
     height: 0;
     overflow: hidden;
+    padding: 0;
+    margin: 10px;
   }
 }
 
