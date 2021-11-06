@@ -180,6 +180,9 @@ const slides = document.querySelectorAll('.header__main-illustration')
 const feedbackForm = document.forms["form_message"]
 const skillsCellTemplate = document.querySelector('.skills__description-cell-template').content.querySelector('.skills__description-cell')
 const skillsContainer = document.querySelector('.skills__description')
+const fullScreenPage = document.querySelector('.fullscreen')
+const sliderPage = document.querySelector('.slider')
+const mainPage = document.querySelector('.head')
 //validation config
 const validationFormConfig = {
   formSelector: '.form',
@@ -218,6 +221,19 @@ const handleDownPage = () => {
 handleScrollUpButton.addEventListener('click', handleUpPage)
 handleScrollDownButton.addEventListener('click', handleDownPage)
 handleScrollCenterButton.addEventListener('click', handleCenterPage)
+fullScreenPage.addEventListener('wheel', handleCenterPage)
+sliderPage.addEventListener('wheel', (evt) => {
+  if (evt.deltaY < 0) {
+    handleUpPage()
+  } else {
+    handleDownPage()
+  }
+})
+mainPage.addEventListener('wheel', (evt) => {
+  if (window.pageYOffset === 0 && evt.deltaY < 0 ) {
+    handleCenterPage()
+  }
+})
 
 const upButton = document.querySelector('.controls__button_up')
 const downButton = document.querySelector('.controls__button_down')
