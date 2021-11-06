@@ -221,7 +221,11 @@ const handleDownPage = () => {
 handleScrollUpButton.addEventListener('click', handleUpPage)
 handleScrollDownButton.addEventListener('click', handleDownPage)
 handleScrollCenterButton.addEventListener('click', handleCenterPage)
-fullScreenPage.addEventListener('wheel', handleCenterPage)
+fullScreenPage.addEventListener('wheel', (evt) => {
+  if(evt.deltaY > 0) {
+    handleCenterPage()
+  }
+})
 sliderPage.addEventListener('wheel', (evt) => {
   if (evt.deltaY < 0) {
     handleUpPage()
