@@ -35,7 +35,7 @@
 
 Склонировать проект на ПК:
 
-    git clone git@github.com:Stormuke/mesto.git
+    git clone git@github.com:Stormuke/portfolio.git
 
 Установить зависимости
 
