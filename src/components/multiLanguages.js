@@ -11,7 +11,7 @@ export const languages = {
     mainPage: "Главная Страница",
     mesto: {
       title: "Место",
-      subtitle: "Одностраничное приложение"
+      subtitle: "Одностраничное приложение на React JS с регистрацией и авторизацией"
     },
     howToLearn: {
       title: "Научится учиться",
@@ -59,7 +59,7 @@ export const languages = {
     mainPage: "Main Site",
     mesto: {
       title: "Mesto",
-      subtitle: "Single page application"
+      subtitle: "Single page application with registration and authorization"
     },
     howToLearn: {
       title: "How to learn",
