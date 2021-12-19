@@ -34,7 +34,7 @@ h1,p{-webkit-margin-before:0;-webkit-margin-after:0;margin-block-end:0;margin-bl
 .title_size_s{margin-bottom:20px;text-align:center}@media screen and (max-width:768px){.title_size_s{font-size:1.7em;margin-bottom:150px;text-align:center}}
 .subtitle{font-size:1.1em;margin:0}
 .subtitle_size_m{max-width:23%}
-.subtitle_size_s{max-width:90%;text-align:center}
+.subtitle_size_s{max-width:80%;text-align:center}
 .header{align-items:center;display:flex;flex-direction:column;padding-bottom:60px;position:relative}@media screen and (max-width:768px){.header{margin:0 auto;max-width:90%;padding-top:20px}}@media screen and (min-width:768px){.header{padding-top:0}}
 .header__main-slider{display:flex;width:95%}@media screen and (max-width:768px){.header__main-slider{width:100%}}
 .header__main-illustration{background:50% no-repeat;background-size:cover;border-radius:10px;flex:1;height:80vh;margin:2px;transition:all .5s ease-in-out;width:100%}
